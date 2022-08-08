@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My portfolio</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap" rel="stylesheet">
+</html>
+<body>
+    <div class="bg-gradient">
+        <div class="title" >
+            My Portfolio
+        </div>
+        <div id="centered-text">
+            This is my portfolio. It is still a work in progress, so for now it looks pretty empty.
+            In the future I'm going to add more projects
+        </div>
+    </div>
+    <!-- <hr> -->
+    <div class="row-container">
+        <ul class="cards">
+            <li class="card" id="population">
+                <a href="https://population-app-dashboard.herokuapp.com/">
+                    <div class="project-title">
+                        Genetic Drift Simulation
+                    </div> 
+                    <div class="project_description">
+                        Simple simulation to explore the effects of genetic drift and natural selection on population of different size. 
+                        It is possible to modify most of the variables 
+                    </div>
+                </a>
+            </li>
+            <li class="card" id="msc-thesis">
+                <a href="">
+                    <div class="project-title">
+                        Master Thesis:</br> Trophic Network
+                    </div> 
+                    <div class="project_description">
+                        In my Master Thesis I investigated the effects of data aggregation on ecological trophic network models.
+                        6 new models have been created starting from a published network. In this dashboard I try to synthetize the 
+                        main results.
+                    </div>
+                </a>
+            </li>
+            <li class="card" id="tododo">
+                <a href="https://mirk-00.github.io/Todo-test/">
+                    <div class="project-title">
+                        To-Do Web App
+                    </div> 
+                    <div class="project_description">
+                        This web app has been a test environment to challenge my skills in Javascript and web developing in general,
+                        yet it provides an efficient tool for everyday usage. 
+                        <br>It includes swipe detection, smart color filters and intuitive UI. 
+                    </div>
+                </a>
+            </li>
+    </ul>
+    </div>
+    <svg class="editorial"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 24 150 28 "
+     preserveAspectRatio="none">
+ <defs>
+ <path id="gentle-wave"
+ d="M-160 44c30 0 
+    58-18 88-18s
+    58 18 88 18 
+    58-18 88-18 
+    58 18 88 18
+    v44h-352z" />
+  </defs>
+  <g class="parallax1">
+   <use xlink:href="#gentle-wave" x="50" y="3" fill="#b0dadd"/>
+  </g>
+    <g class="parallax2">
+   <use xlink:href="#gentle-wave" x="50" y="0" fill="#87a6a6"/>
+    </g>
+      <g class="parallax3">
+   <use xlink:href="#gentle-wave" x="50" y="9" fill="#638280"/>
+   </g>
+    <g class="parallax4">
+   <use xlink:href="#gentle-wave" x="50" y="6" fill="#5a7976"/>  
+  </g>
+</svg>
+
+</body>
