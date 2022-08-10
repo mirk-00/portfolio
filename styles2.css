@@ -143,16 +143,6 @@
     transform: translate(85px, 0%);
   }
 }
-*::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-* {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
 * {
   font-family: Poppins, sans-serif;
 }
@@ -165,6 +155,21 @@
   -ms-scroll-snap-type: mandatory;
       scroll-snap-type: mandatory;
   padding: 0%;
+  /* Works on Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: #e2eeee #87a6a6;
+  /* Works on Chrome, Edge, and Safari */
+}
+.cards::-webkit-scrollbar {
+  width: 1px;
+}
+.cards::-webkit-scrollbar-track {
+  background: #e2eeee;
+}
+.cards::-webkit-scrollbar-thumb {
+  background-color: #87a6a6;
+  border-radius: 30px;
+  border: 1px #e2eeee;
 }
 .cards .card {
   white-space: normal;
@@ -180,16 +185,24 @@
   display: flex;
   flex-direction: column;
   transition: 0.5s;
+  /* Hide scrollbar for IE, Edge and Firefox */
+}
+.cards .card::-webkit-scrollbar {
+  display: none;
+}
+.cards .card {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .project-title {
-  font-size: 1.8em;
+  font-size: 1.5em;
   margin: 3% 0 6% 0;
   color: #232F2E;
 }
 
 .project-description {
-  font-size: 1.2em;
+  font-size: 1em;
   margin: 5%;
   color: #232F2E;
 }
@@ -223,6 +236,7 @@ a:active {
   padding: 5%;
   text-align: center;
   overflow: scroll;
+  /* Hide scrollbar for IE, Edge and Firefox */
 }
 .top-row .title {
   font-size: 3.5em;
@@ -234,6 +248,13 @@ a:active {
 }
 .top-row * {
   color: #232F2E;
+}
+.top-row::-webkit-scrollbar {
+  display: none;
+}
+.top-row {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 @media (min-width: 500) {
@@ -254,7 +275,6 @@ a:active {
 @media (min-width: 1100px) {
   .cards {
     padding: 1%;
-    padding-bottom: 4%;
   }
   .cards .card {
     flex: 1 0 33% !important;

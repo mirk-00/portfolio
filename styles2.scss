@@ -87,17 +87,6 @@
     transform: translate(85px, 0%);
   }
 }
-////
-/// Hide scrollbar
-*::-webkit-scrollbar {
-    display: none;
-  }
-  
-  /* Hide scrollbar for IE, Edge and Firefox */
-*{
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
 
 
 //////////////////////
@@ -115,6 +104,23 @@
     flex-direction: row;
     scroll-snap-type: mandatory;
     padding: 0%;
+    /* Works on Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: #e2eeee #87a6a6;
+    /* Works on Chrome, Edge, and Safari */
+    &::-webkit-scrollbar {
+      width: 1px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #e2eeee;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #87a6a6;
+      border-radius: 30px;
+      border: 1px  #e2eeee;
+    }
         .card{
             white-space: normal;
             margin: 0 8%;
@@ -129,15 +135,23 @@
             display: flex;
             flex-direction: column;
             transition: 0.5s;
+            &::-webkit-scrollbar{
+              display: none;
+            }
+              /* Hide scrollbar for IE, Edge and Firefox */
+            &{
+              -ms-overflow-style: none;  /* IE and Edge */
+              scrollbar-width: none;  /* Firefox */
+            }
         }
 }
 .project-title{
-    font-size: 1.8em;
+    font-size: 1.5em;
     margin: 3% 0 6% 0;
     color: #232F2E;
 }
 .project-description{
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 5%;
     color: #232F2E;
 
@@ -156,6 +170,7 @@ a {
     & a{
         color: #e2eeee;
     }
+    
   }
 
 .top-row {
@@ -173,6 +188,14 @@ a {
     }
     & * {
         color: #232F2E;
+    }
+    &::-webkit-scrollbar{
+      display: none;
+    }
+      /* Hide scrollbar for IE, Edge and Firefox */
+    &{
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
     }
 }
 
@@ -196,7 +219,6 @@ a {
 @media (min-width: 1100px) {
     .cards{
         padding: 1%;
-        padding-bottom: 4%;
     }
     .cards .card{
         flex: 1 0 33% !important;
