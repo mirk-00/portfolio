@@ -5,87 +5,129 @@
         <title>My portfolio</title>
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <link rel="stylesheet" type="text/css" href="styles2.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" type="text/css" href="styles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap" rel="stylesheet">
-</html>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Lato:wght@100;200;300;400&display=swap" rel="stylesheet">
+
+
 <body>
-    <div class="top-row bg-gradient">
-        <div class="title" >
-            My Portfolio
+    <div class="sidebar bg-gradient">
+        <div class="ref-container">
+            <a href="#home" id="home-ref">Home</a>
+            <a href="#page1">Genetic Drift</a>
+            <a href="#page2">Trophic Network</a>
+            <a href="#page3">To-do list</a>
         </div>
-        <div id="centered-text">
-            This is my portfolio. It is still a work in progress: now it looks empty but in the future I'm going
-            to add more interesting projects.
+
+    </div>
+
+    <div id="home">
+        <div class="main-board">
+            <div class="title">
+                My Portfolio
+            </div>
+            <div class="description">
+                This is my portfolio.<br>
+                It's still in development so it looks empty. <br>
+                In the future I will add more projects.
+            </div>
+            <a href="#page1" class="button" id="arrow">
+                <svg class="svg-arrow" width="100%" height="100%" viewBox="0 0 353 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M183.494 183.494C187.595 179.394 187.595 172.745 183.494 168.645L22.2739 7.42462C18.1734 3.32411 11.5251 3.32411 7.42462 7.42462V7.42462C3.32411 11.5251 3.32411 18.1734 7.42462 22.2739L168.645 183.494C172.745 187.595 179.394 187.595 183.494 183.494V183.494Z" fill="url(#paint0_linear_16_22)"/>
+                    <path d="M169.384 183.494C165.284 179.394 165.284 172.745 169.384 168.645L330.604 7.42462C334.705 3.32411 341.353 3.32411 345.454 7.42462V7.42462C349.554 11.5251 349.554 18.1734 345.454 22.2739L184.233 183.494C180.133 187.595 173.485 187.595 169.384 183.494V183.494Z" fill="url(#paint1_linear_16_22)"/>
+                    <path d="M183.494 248.454C187.595 244.353 187.595 237.705 183.494 233.604L22.2739 72.384C18.1734 68.2835 11.5251 68.2835 7.42462 72.384V72.384C3.32411 76.4845 3.32411 83.1328 7.42462 87.2333L168.645 248.454C172.745 252.554 179.394 252.554 183.494 248.454V248.454Z" fill="url(#paint2_linear_16_22)"/>
+                    <path d="M169.384 248.454C165.284 244.353 165.284 237.705 169.384 233.604L330.604 72.384C334.705 68.2835 341.353 68.2835 345.454 72.384V72.384C349.554 76.4845 349.554 83.1328 345.454 87.2333L184.233 248.454C180.133 252.554 173.485 252.554 169.384 248.454V248.454Z" fill="url(#paint3_linear_16_22)"/>
+                    <defs>
+                    <linearGradient id="paint0_linear_16_22" x1="205.111" y1="185.329" x2="160.68" y2="220.653" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#CEE3E1"/>
+                    <stop offset="1" stop-color="#D5EBDA"/>
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_16_22" x1="147.768" y1="185.329" x2="192.198" y2="220.653" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#CEE3E1"/>
+                    <stop offset="1" stop-color="#D5EBDA"/>
+                    </linearGradient>
+                    <linearGradient id="paint2_linear_16_22" x1="205.111" y1="250.288" x2="160.68" y2="285.613" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#CEE3E1"/>
+                    <stop offset="1" stop-color="#D5EBDA"/>
+                    </linearGradient>
+                    <linearGradient id="paint3_linear_16_22" x1="147.768" y1="250.288" x2="192.198" y2="285.613" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#CEE3E1"/>
+                    <stop offset="1" stop-color="#D5EBDA"/>
+                    </linearGradient>
+                    </defs>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div id="page1">
+        <div class="main-board">
+            <div class="title">
+                Genetic Drift Simulator
+            </div>
+            <div class="description">
+                In this simple simulator you can explore the effects of genetic drift on populations. <br>
+                It is also possible to include the effects of natural selection together with genetic drift. <br>
+                The user can adjust many parameters as desired. <br>
+            </div>
+            <a class="button" target="_blank" href="https://population-app-dashboard.herokuapp.com/">
+                <div class="circle outer-circle bg-gradient-outer">
+                    <div class="circle middle-circle bg-gradient-middle">
+                        <div class="circle inner-circle bg-gradient">
+                            Explore
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="page2">
+        <div class="main-board">
+            <div class="title">
+                Trophic Network Models 
+            </div>
+            <div class="description">
+                This dashboard includes the main results of my Master thesis. <br>
+                The analysis concerned the marine ecosystem of Mediterranean Sea area known as Strait of Sicily. <br>
+                The webpage contains a very brief introduction and different plots. <br>
+            </div>
+            <a class="button" target="_blank" href="https://thesis-dashboard-eng.herokuapp.com/">
+                <div class="circle outer-circle bg-gradient-outer">
+                    <div class="circle middle-circle bg-gradient-middle">
+                        <div class="circle inner-circle bg-gradient">
+                            Explore
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="page3">
+        <div class="main-board">
+            <div class="title">
+                To-do task manager
+            </div>
+            <div class="description">
+                This page has been my sandbox for practicing with Javascript and CSS. <br>
+                It includes an intuitive User Interface and simple personalization options. <br>
+                <br>
+                All data is only stored locally.
+            </div>
+            <a class="button" target="_blank" href="https://mirk-00.github.io/Todo-test/">
+                <div class="circle outer-circle bg-gradient-outer">
+                    <div class="circle middle-circle bg-gradient-middle">
+                        <div class="circle inner-circle bg-gradient">
+                            Explore
+                        </div>
+                    </div>
+                </div>
+            </a>
         </div>
     </div>
 
-    <ul class="cards">
-        <li class="card bg-gradient" id="population">
-            <a href="https://population-app-dashboard.herokuapp.com/">
-                <div class="project-title">
-                    Genetic Drift Simulation
-                </div> 
-                <div class="project-description">
-                    Simple simulation to explore the effects of genetic drift and natural selection on population of different size. 
-                    The user can modify most of the parameters.
-                </div>
-            </a>
-        </li>
-        <li class="card bg-gradient" id="msc-thesis">
-            <a href="https://thesis-dashboard-eng.herokuapp.com/">
-                <div class="project-title">
-                    Master Thesis:</br> Trophic Network
-                </div> 
-                <div class="project-description">
-                    In my M.Sc. thesis I investigated the effects of data aggregation on ecological trophic network models.
-                    6 new models have been created starting from a published trophic network. In this dashboard I try to synthetize the 
-                    main results.
-                </div>
-            </a>
-        </li>
-        <li class="card bg-gradient" id="tododo">
-            <a href="https://mirk-00.github.io/Todo-test/">
-                <div class="project-title">
-                    To-Do Web App
-                </div> 
-                <div class="project-description">
-                    This web app has been a test environment to challenge my skills in Javascript and web developing in general,
-                    yet it provides an efficient tool for everyday usage. 
-                    <br>It includes swipe detection, smart color filters and intuitive UI. 
-                </div>
-            </a>
-        </li>
-</ul>
-<svg class="editorial"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    viewBox="0 24 150 28 "
-    preserveAspectRatio="none">
-<defs>
- <path id="gentle-wave"
- d="M-160 44c30 0 
-    58-18 88-18s
-    58 18 88 18 
-    58-18 88-18 
-    58 18 88 18
-    v44h-352z" />
-  </defs>
-  <g class="parallax1">
-   <use xlink:href="#gentle-wave" x="50" y="3" fill="#b0dadd"/>
-  </g>
-    <g class="parallax2">
-   <use xlink:href="#gentle-wave" x="50" y="0" fill="#87a6a6"/>
-    </g>
-      <g class="parallax3">
-   <use xlink:href="#gentle-wave" x="50" y="9" fill="#638280"/>
-   </g>
-    <g class="parallax4">
-   <use xlink:href="#gentle-wave" x="50" y="6" fill="#5a7976"/>  
-  </g>
-</svg>
+
+
+
 
 </body>
+</html>
