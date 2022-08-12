@@ -45,12 +45,11 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-snap-type: y mandatory !important;
 }
 
 *{
     box-sizing: border-box;
-    scroll-snap-type: y mandatory !important;
-
 }
 
 body {
@@ -138,6 +137,12 @@ a {
     font-size: 4em;
     font-weight: 200;
     font-family: 'Josefin Sans', sans-serif;
+}
+.subtitle {
+    padding-top: 2%;
+    font-size: 0.3em;
+    font-weight: 300;
+    opacity: 0.7;
 }
 .description {
     font-weight: 300;
