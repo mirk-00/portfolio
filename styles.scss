@@ -148,6 +148,7 @@ a {
     font-weight: 300;
     line-height: 1.5;
     position: relative;
+    padding-right: 3%;
     top: 30vh;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -203,12 +204,31 @@ $in-radius: 10vw;
     } 
 }
 @media (max-width: 600px) {
+    body{
+        font-size: 1.2em;
+    }
+    .ref-container{
+        font-size: 0.9em;
+    }
     .inner-circle {
-        font-size: 1em;     
+        font-size: 1.2em;     
         font-weight: 500;   
-        color: #142f20;
+        color: #142f20cc;
     } 
-
+    a {
+        color: #18251d9e;
+        &:hover{
+            color: #18251d;
+        }
+    }
+    .bg-gradient-middle{
+        background: linear-gradient(-45deg, #a1e0d981, #ace7ba5f);
+        background-size: 500%;
+        animation: gradient-scale 8s ease-in-out infinite;
+      }
+    .bg-gradient{
+        background: linear-gradient(-45deg, #b6e8e2a2, #c6e5d663);
+    }
 }
 
 
