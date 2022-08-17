@@ -204,7 +204,7 @@ a:active {
   font-weight: 300;
   line-height: 1.5;
   position: relative;
-  padding-right: 3%;
+  padding-right: 5%;
   top: 30vh;
   transform: translateY(-50%);
 }
@@ -269,6 +269,9 @@ a:active {
     font-size: 1.2em;
     font-weight: 500;
     color: rgba(20, 47, 32, 0.8);
+  }
+  .sidebar {
+    width: 20vw;
   }
   a {
     color: rgba(24, 37, 29, 0.6196078431);

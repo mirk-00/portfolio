@@ -148,7 +148,7 @@ a {
     font-weight: 300;
     line-height: 1.5;
     position: relative;
-    padding-right: 3%;
+    padding-right: 5%;
     top: 30vh;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -215,6 +215,9 @@ $in-radius: 10vw;
         font-weight: 500;   
         color: #142f20cc;
     } 
+    .sidebar {
+        width: 20vw;
+    }
     a {
         color: #18251d9e;
         &:hover{
